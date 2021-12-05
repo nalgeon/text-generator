@@ -3,11 +3,11 @@ from pathlib import Path
 
 import generator
 
-parser = argparse.ArgumentParser(description="Generate a random text with Markov chain.")
+parser = argparse.ArgumentParser(description="Generate a random text with Markov chains.")
 parser.add_argument(
-    "corpus", metavar="CORPUS", type=str, help="a path to the plain text corpus file"
+    "corpus", metavar="CORPUS", type=str, help="path to the plain text corpus file"
 )
-parser.add_argument("--word-count", type=int, default=300, help="a number of words to generate")
+parser.add_argument("--word-count", type=int, default=300, help="number of words to generate")
 parser.add_argument(
     "--sample-size", type=int, default=6, help="sampling size for building the chain"
 )
