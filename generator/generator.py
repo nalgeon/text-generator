@@ -28,8 +28,8 @@ def collect_transitions(samples: list[list[str, ...]]) -> dict[str, list[str, ..
     transitions = defaultdict(list)
     for sample in samples:
         state = "".join(sample[0:-1])
-        next = sample[-1]
-        transitions[state].append(next)
+        next_ = sample[-1]
+        transitions[state].append(next_)
     return transitions
 
 
